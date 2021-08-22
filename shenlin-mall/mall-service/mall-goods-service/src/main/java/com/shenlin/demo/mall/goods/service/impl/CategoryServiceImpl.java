@@ -6,6 +6,7 @@ import com.shenlin.demo.mall.goods.mapper.CategoryMapper;
 import com.shenlin.demo.mall.goods.model.Category;
 import com.shenlin.demo.mall.goods.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -13,6 +14,7 @@ import java.util.List;
  * @author : ShenLin
  * @date : 2021/8/20 22:42
  */
+@Service
 public class CategoryServiceImpl extends ServiceImpl<CategoryMapper, Category> implements CategoryService {
 
     @Autowired
